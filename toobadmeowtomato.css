@@ -11,29 +11,50 @@
   font-size: 40px;
 }
 
-/* Style the top navigation bar */
+/* Reset default browser margins */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the navigation container */
 .navbar {
-  overflow: hidden;
-  background-color: #333;
+  display: flex;
+  justify-content: space-between; /* Pushes logo to left, links to right */
+  align-items: center;            /* Vertically centers items */
+  background-color: #333;         /* Dark gray background */
+  padding: 10px 20px;
 }
 
-/* Style the navigation bar links */
-.navbar a {
-  float: left;
-  display: block;
+/* Style the logo */
+.logo {
   color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
+/* Style the list wrapper */
+.nav-links {
+  display: flex;                  /* Aligns list items horizontally */
+  list-style: none;               /* Removes bullet points */
+  margin: 0;
+  padding: 0;
 }
 
-/* Change color on hover */
-.navbar a.hover {
-  background-color: #ddd;
-  color: black;
+/* Space out the individual list items */
+.nav-links li {
+  padding: 0 15px;
+}
+
+/* Style the clickable links */
+.nav-links a {
+  color: white;
+  text-decoration: none;          /* Removes the default underline */
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for interactivity */
+.nav-links a:hover {
+  color: #04AA6D;                 /* Changes color to green on hover */
 }
