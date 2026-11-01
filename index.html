@@ -18,13 +18,86 @@ body {
   <p>A website created by me.</p>
 </div>
 
-<nav class="navbar">
-  <div class="logo">MyWebsite</div>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="oughhh.html">About</a></li>
-    <li><a href="thoseareyanswers.html">Comms</a></li>
-    <li><a href="yeah.html">Portfolio</a></li>
-  </ul>
-</nav>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+   background-image: url("https://file.garden/aH7_30og2i6bookP/Neocities/Personal/14c090fe33ead3759e0afb849d5788d4.jpg");
+   background-color: #000000;
+   text-align: center;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+   padding: 50px;
+   
+}
+
+/* Style the topnav */
+ul.topnav {
+  position: sticky;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color:rgb(14, 17, 48);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/* Style links in topnav */
+ul.topnav li a {
+  display: block;
+  color: #f1f1f1;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+ul.topnav li a:hover {
+  background-color: #111e61;
+  color: rgb(255, 255, 255);
+}
+div.flex-container {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+}
+
+div.flex-container > div {
+  margin: 10px;
+}
+
+/* Use media query and show the flex items vertically if screen width is less than 600px */
+@media screen and (max-width:600px) {
+  div.flex-container {
+    flex-direction: column;
+  }
+}
+</style>
+<ul class="topnav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="love.html">News</a></li>
+  <li><a href="silly.html">Stuff</a></li>
+</ul>
+<div class="flex-container">
+  <div>
+    <h2>Side</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.</p>
+  </div>
+
+  <div>
+<h2>Main Content</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  </body>
+</html>
+
 </html>
